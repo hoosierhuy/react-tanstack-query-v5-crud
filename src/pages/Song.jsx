@@ -12,7 +12,7 @@ const Song = () => {
   const {
     isPending,
     isError,
-    data: song,
+    data: hitSong,
     error,
   } = useQuery({
     queryKey: ['songs', id],
@@ -28,9 +28,9 @@ const Song = () => {
         Back Song List
       </button>
       <figure style={{ backgroundColor: '#FFCCCB', padding: '1rem' }}>
-        <h2>Song: {song?.song}</h2>
+        <h2>Song: {hitSong?.song}</h2>
         <p>
-          <strong>Album:</strong> {song?.album}
+          <strong>Album:</strong> {hitSong?.album}
         </p>
       </figure>
     </>

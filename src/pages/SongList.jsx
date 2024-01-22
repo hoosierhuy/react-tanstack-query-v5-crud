@@ -1,18 +1,18 @@
 // React Router v6
 import { useNavigate } from 'react-router-dom'
 // React Query
-import {
-  useQuery,
-  useQueryClient /*, useMutation*/,
-} from '@tanstack/react-query'
+// import {
+//   useQuery,
+//   useQueryClient /*, useMutation*/,
+// } from '@tanstack/react-query'
 // Local files
-/** Comment IN the commented out out codes if you don't want to use custom hooks */
-import { /*deleteSong,*/ fetchSongs } from '../services/songsApi'
+/** Comment IN the commented out codes if you don't want to use custom hooks */
+// import { deleteSong, fetchSongs } from '../services/songsApi'
 import AddSong from '../components/AddSong'
 import { useDeleteSong } from '../custom-hooks/mutations'
 import { useSongs } from '../custom-hooks/queries'
 
-const SongLists = () => {
+const SongList = () => {
   const navigate = useNavigate()
   // const queryClient = useQueryClient()
 
@@ -39,10 +39,10 @@ const SongLists = () => {
 
   const deleteSongMutation = useDeleteSong()
 
-  const handleDelete = (id) => deleteSongMutation.mutate(id)
-
   if (isPending) return <span>Loading Taylor's songs...</span>
   if (isError) return `Error: ${error.message}`
+
+  const handleDelete = (id) => deleteSongMutation.mutate(id)
 
   return (
     <section>
@@ -83,4 +83,4 @@ const SongLists = () => {
   )
 }
 
-export default SongLists
+export default SongList

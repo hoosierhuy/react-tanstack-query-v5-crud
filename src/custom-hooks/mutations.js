@@ -9,8 +9,8 @@ export function useDeleteSong() {
     mutationFn: deleteSong,
 
     onSuccess() {
-      queryClient.invalidateQueries('songs')
-      console.log('Song deleted successfully')
+      queryClient.invalidateQueries({ queryKey: ['songs'] })
+      console.log('Song deleted successfully 🎉')
     },
   })
 }
