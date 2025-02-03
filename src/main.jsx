@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// React Router v6
-import { BrowserRouter } from 'react-router-dom'
+// React Router v7
+import { BrowserRouter } from 'react-router'
 // React Query
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'

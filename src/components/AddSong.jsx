@@ -13,7 +13,7 @@ const AddSong = () => {
     mutationFn: createSong,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['songs'] })
-      console.log('Song created successfully')
+      console.info('Song created successfully')
     },
   })
 

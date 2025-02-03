@@ -1,5 +1,5 @@
-// React Router v6
-import { useNavigate, useParams } from 'react-router-dom'
+// React Router v7
+import { useNavigate, useParams } from 'react-router'
 // React Query
 import { useQuery } from '@tanstack/react-query'
 // Local files

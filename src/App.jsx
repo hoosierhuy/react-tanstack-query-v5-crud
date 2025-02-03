@@ -1,5 +1,5 @@
-// React Router v6
-import { Route, Routes } from 'react-router-dom'
+// React Router v7
+import { Route, Routes } from 'react-router'
 // Local files
 import EditSong from './pages/EditSong'
 import Song from './pages/Song'

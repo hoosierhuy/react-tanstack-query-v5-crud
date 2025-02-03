@@ -10,7 +10,7 @@ export function useDeleteSong() {
 
     onSuccess() {
       queryClient.invalidateQueries({ queryKey: ['songs'] })
-      console.log('Song deleted successfully 🎉')
+      console.info('Song deleted successfully 🎉')
     },
   })
 }
