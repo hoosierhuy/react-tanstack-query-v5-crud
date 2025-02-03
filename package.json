@@ -11,25 +11,25 @@
     "server": "concurrently \"npm run dev\" \"npm run database\""
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.17.19",
-    "axios": "^1.6.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2",
-    "uuid": "^9.0.1"
+    "@tanstack/react-query": "5.66.0",
+    "axios": "1.7.9",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "7.1.5",
+    "uuid": "11.0.5"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.17.20",
-    "@tanstack/react-query-devtools": "^5.17.19",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
-    "concurrently": "^8.2.2",
+    "@tanstack/eslint-plugin-query": "5.66.0",
+    "@tanstack/react-query-devtools": "5.66.0",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "@vitejs/plugin-react": "4.3.4",
+    "concurrently": "9.1.2",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "json-server": "^0.17.4",
-    "vite": "^5.0.8"
+    "json-server": "0.17.4",
+    "vite": "6.0.11"
   }
 }
